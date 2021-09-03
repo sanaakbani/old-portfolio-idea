@@ -1,5 +1,7 @@
 {
   "projects": {
-    "default": "portfolio-705d5"
-  }
+    "default": "sana-akbani",
+    "sana-akbani": "sana-akbani"
+  },
+  "targets": {}
 }
