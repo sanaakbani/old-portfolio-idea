@@ -1,73 +1,29 @@
 
 
 $(document).ready(function() {
-    callText1();
+    typeSentence("Hello there.", ".text1", ".typewriter1");
+    // new Promise(resolve => setTimeout(resolve, 2000)).then( function() {
+    //     typeSentence("Nice to meet you.", ".text2", ".typewriter2");
+    //     document.querySelector('.typewriter2').style.display = 'none';
+    // })
   });
 
 //TYPEWRITER EFFECT
-function callText1() {
-    var content = 'Hello there.';
-    
-    var ele = '<span>' + content.split('').join('</span><span>') + '</span>';
-    
-    $(ele).hide().appendTo('.text1').each(function (i) {
-        $(this).delay(50 * i).css({
-            display: 'inline',
-            opacity: 0
-        }).animate({
-            opacity: 1
-        }, 10);
-    });
-        callText2();
+function typeSentence(sentence, eleRef, typeRef) {
+    const letters = sentence.split("");;
+    let i = 0;
+    delay = 100;
+    document.querySelector(typeRef).style.display = 'inline-block';
+    while(i < letters.length) {
+      new Promise(resolve => setTimeout(resolve, delay)).then( function() {
+        $(eleRef).append(letters[i]);
+        i++;
+      });
     }
+    document.querySelector(typeRef).style.display = 'none';
+    return;
+  }
 
-function callText2() {
-var content = 'Nice to meet you. I am Sana Akbani (she/her/hers), a full-time student studying computer science, mathematics, and business administration. I also like to code and create stuff whenever I can.';
-
-var ele = '<span>' + content.split('').join('</span><span>') + '</span>';
-
-$(ele).hide().appendTo('.text2').each(function (i) {
-    $(this).delay(1000 + (50 * i)).css({
-        display: 'inline',
-        opacity: 0
-    }).animate({
-        opacity: 1
-    }, 10);
-});
-    callText3();
-}
-
-function callText3() {
-var content = 'I hope this portfolio finds you well and that you will find your time here worthwhile.';
-
-var ele = '<span>' + content.split('').join('</span><span>') + '</span>';
-
-$(ele).hide().appendTo('.text3').each(function (i) {
-    $(this).delay(11000 + (50 * i)).css({
-        display: 'inline',
-        opacity: 0
-    }).animate({
-        opacity: 1
-    }, 10);
-});
-    callText4();
-}
-
-function callText4() {
-    var content = 'To begin, click anywhere and continue on. See you on the other side!';
-    
-    var ele = '<span>' + content.split('').join('</span><span>') + '</span>';
-    
-    $(ele).hide().appendTo('.text4').each(function (i) {
-        $(this).delay(15500 + (50 * i)).css({
-            display: 'inline',
-            opacity: 0
-        }).animate({
-            opacity: 1
-        }, 10);
-    });
-    
-    }
 
 //CURSOR TRAILER
 const LINE_DURATION = 1;
