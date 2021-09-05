@@ -4,67 +4,169 @@ body {
           margin: 0;
           padding: 0;
           position: absolute;
-          top: 0;
-          bottom: 0;
-          right: 0;
-          left: 0;
+          height: 100%;
+          width: 100%;
       }
+
 
       #myCanvas {
         position: absolute;
-        top: 0;
-        bottom: 0;
-        right: 0;
-        left: 0;
+        height: 100%;
+        width: 100%;
+
       }
 
-      .bg-img {
+      .bg-color {
         position: absolute;
-        top: 0;
-        bottom: 0;
-        right: 0;
-        left: 0;
+        height: 100%;
+        width: 100%;
         background-color: rgb(32, 33, 36);
-        background-size: 100% 100%;
-        box-shadow: inset -150px 0px 200px rgb(15, 15, 15);
+        z-index: -2;
+      }
+      
+      .box1 {
+        background-color: rgb(200,56,100);
+        width: 317px;
+        height: 97px;
+        position: absolute;
+        margin: 7.5% 0 0 6%;
+        left: 0px;
+        grid-area: 1 / 1 / 2 / 2;
+        justify-self: start;
+        align-self: start;
         z-index: -2;
       }
 
+      .box2 {
+        background-color: rgba(145, 49, 170, .6);
+        width: 200px;
+        height: 97px;
+        position: absolute;
+        margin: 9% 0 0 17.5%;
+        left: 0px;
+        grid-area: 1 / 1 / 2 / 2;
+        justify-self: start;
+        align-self: start;
+        z-index: -2;
+      }
+
+      .box3 {
+        background-color: rgba(58, 106, 169, .8);
+        width: 570px;
+        height: 210px;
+        position: absolute;
+        margin: 18% 0 0 20.4%;
+        left: 0px;
+        grid-area: 1 / 1 / 2 / 2;
+        justify-self: start;
+        align-self: start;
+        z-index: -2;
+      }
+
+      .box4 {
+        background-color: rgba(113, 240, 202, 0.8);
+        width: 480px;
+        height: 200px;
+        position: absolute;
+        margin: 20% 0 0 6%;
+        left: 0px;
+        grid-area: 1 / 1 / 2 / 2;
+        justify-self: start;
+        align-self: start;
+        z-index: -2;
+      }
+
+      .bottom-line {
+        background-color: rgba(109, 142, 199, 1);
+        width: 1250px;
+        height: 20px;
+        position: absolute;
+        margin: 39% 0 0 6%;
+        left: 0px;
+        grid-area: 1 / 1 / 2 / 2;
+        justify-self: start;
+        align-self: start;
+        z-index: -2;
+      }
+
+      .box6 {
+        background-color: rgb(109, 142, 199);
+        width: 350px;
+        height: 418px;
+        position: absolute;
+        margin: 10% 0 0 68.5%;
+        left: 0px;
+        grid-area: 1 / 1 / 2 / 2;
+        justify-self: start;
+        align-self: start;
+        z-index: -2;
+      }
+
+      .box7 {
+        background-color: rgba(54, 34, 96, .6);
+        width: 330px;
+        height: 470px;
+        position: absolute;
+        margin: 5% 0 0 62%;
+        left: 0px;
+        grid-area: 1 / 1 / 2 / 2;
+        justify-self: start;
+        align-self: start;
+        z-index: -2;
+      }
+
+      .box-shadow {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        box-shadow: inset 0px -150px 200px rgb(15, 15, 15);
+      }
+
       .container {
-        text-align: center;
-        margin-top: 5%;
+        position:relative;
+        text-align: left;
+        margin-top: 10%;
+        margin-bottom: 6%;
+        margin-left: 7%;
         z-index: -1;
       }
 
       .title {
-        font-size: 2em;
+        font-size: 3em;
         font-weight: bolder;
-        margin-top: 10%;
-        margin-bottom: 2.5%;
       }
 
-      .body-container {
+      .text-container {
+        font-size: 1.17em;
+        width: 740px;
         margin-top: 1%;
         margin-bottom: 1%;
-        margin-left: 35%;
-        margin-right: 35%;
       }
 
       .typewriter1 {
         width: 2px;
-        height: 42px;
+        height: 3em;
         background-color: white;
-        margin-left: 8px;
-        animation: blink .6s linear infinite alternate;
+        margin-left: 4px;
+        animation: blink .5s linear infinite alternate;
         display: none;
       }
 
       .typewriter2 {
         width: 2px;
-        height: 42px;
+        height: 1.17em;
         background-color: white;
-        margin-left: 8px;
-        animation: blink .6s linear infinite alternate;
+        margin-left: 4px;
+        animation: blink .5s linear infinite alternate;
+        display: none;
+      }
+
+      .typewriter3 {
+        width: 2px;
+        height: 1.17em;
+        background-color: white;
+        margin-left: 4px;
+        animation: blink .5s linear infinite alternate;
         display: none;
       }
 
@@ -75,17 +177,11 @@ body {
         100% {opacity: 0;}
       }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+      .footer {
+        font-size: 2.5em;
+        text-align: center;
+        margin-top: 10%;
+        z-index: -1;
+        display: none;
+      }
 

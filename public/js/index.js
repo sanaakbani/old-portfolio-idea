@@ -1,29 +1,48 @@
-
-
+//window.onLoad
 $(document).ready(function() {
     typeSentence("Hello there.", ".text1", ".typewriter1");
-    // new Promise(resolve => setTimeout(resolve, 2000)).then( function() {
-    //     typeSentence("Nice to meet you.", ".text2", ".typewriter2");
-    //     document.querySelector('.typewriter2').style.display = 'none';
-    // })
+    new Promise(resolve => setTimeout(resolve, 2000)).then( function() {
+      typeSentence("Nice to meet you. I am Sana Akbani, a full-time student studying computer science, mathematics, and business administration. I also like to code and create stuff whenever I can.", ".text2", ".typewriter2");
+      new Promise(resolve => setTimeout(resolve, 11500)).then( function() {
+        typeSentence("I hope this portfolio finds you well and that you will find your time here worthwhile. To begin, click the button below and continue on. See you soon!", ".text3", ".typewriter3");
+        new Promise(resolve => setTimeout(resolve, 12000)).then( function() {
+          fadeIn(document.querySelector('.footer', 1));
+        })
+      })
+    })
   });
 
+function fadeIn(element, endOpacity) {
+    var op = 0.1;  // initial opacity
+    element.style.display = 'block';
+    var timer = setInterval(function () {
+        if (op >= endOpacity){
+            clearInterval(timer);
+        }
+        element.style.opacity = op;
+        element.style.filter = 'alpha(opacity=' + op + ")";
+        op += op * 0.5;
+    }, 100);
+}
+
 //TYPEWRITER EFFECT
-function typeSentence(sentence, eleRef, typeRef) {
+async function typeSentence(sentence, eleRef, typeRef) {
     const letters = sentence.split("");;
     let i = 0;
-    delay = 100;
+    delay = 60;
     document.querySelector(typeRef).style.display = 'inline-block';
     while(i < letters.length) {
-      new Promise(resolve => setTimeout(resolve, delay)).then( function() {
+        await waitForMs(delay);
         $(eleRef).append(letters[i]);
         i++;
-      });
     }
-    document.querySelector(typeRef).style.display = 'none';
+  document.querySelector(typeRef).style.display = 'none';
     return;
-  }
+}
 
+function waitForMs(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms))
+}
 
 //CURSOR TRAILER
 const LINE_DURATION = 1;
@@ -37,7 +56,7 @@ var context;
 var newWidth = 1000;
 var newHeight = 800;
 
-var lineColor = 'rgb(149, 224, 223)';
+var lineColor = 'black';
 var lineDuration = LINE_DURATION;
 var lineFadeLinger = 1;
 var lineWidthStart = LINE_WIDTH_START;
