@@ -1,11 +1,13 @@
-body {
+html, body {
           font-family: 'Monaco', 'Lucida Console', 'Arial';
           color: rgb(253, 253, 253);
           margin: 0;
           padding: 0;
           position: absolute;
-          height: 100%;
-          width: 100%;
+          min-height: 100%;
+          min-width: 100%;
+          overflow: scroll;
+          z-index: -2;
       }
 
 
@@ -13,24 +15,37 @@ body {
         position: absolute;
         height: 100%;
         width: 100%;
-
+        z-index: -1;
       }
 
       .bg-color {
         position: absolute;
-        height: 100%;
-        width: 100%;
+        min-height: 100%;
+        min-width: 100%;
         background-color: rgb(32, 33, 36);
         z-index: -2;
+        /* top: 0; */
+        /* bottom: 0; */
+        left: 0;
+        right: 0;
+        overflow: visible;
+      }
+
+      #c {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        display: block;
+        z-index: -4;
       }
       
       .box1 {
         background-color: rgb(200,56,100);
-        width: 317px;
-        height: 97px;
+        width: 16vw;
+        height: 12vh;
         position: absolute;
-        margin: 7.5% 0 0 6%;
-        left: 0px;
+        margin: 15vh 0 0 6vw;
         grid-area: 1 / 1 / 2 / 2;
         justify-self: start;
         align-self: start;
@@ -39,10 +54,10 @@ body {
 
       .box2 {
         background-color: rgba(145, 49, 170, .6);
-        width: 200px;
-        height: 97px;
+        width: 14vw;
+        height: 13vh;
         position: absolute;
-        margin: 9% 0 0 17.5%;
+        margin: 17vh 0 0 19vw;
         left: 0px;
         grid-area: 1 / 1 / 2 / 2;
         justify-self: start;
@@ -52,120 +67,131 @@ body {
 
       .box3 {
         background-color: rgba(58, 106, 169, .8);
-        width: 570px;
-        height: 210px;
+        width: 41vw;
+        height: 29vh;
         position: absolute;
-        margin: 18% 0 0 20.4%;
+        margin: 34vh 0 0 21.5vw;
         left: 0px;
         grid-area: 1 / 1 / 2 / 2;
         justify-self: start;
         align-self: start;
         z-index: -2;
+        display: none;
       }
 
       .box4 {
         background-color: rgba(113, 240, 202, 0.8);
-        width: 480px;
-        height: 200px;
+        width: 40vw;
+        height: 27vh;
         position: absolute;
-        margin: 20% 0 0 6%;
+        margin: 38vh 0 0 6vw;
         left: 0px;
         grid-area: 1 / 1 / 2 / 2;
         justify-self: start;
         align-self: start;
         z-index: -2;
+        display: none;
       }
 
       .bottom-line {
         background-color: rgba(109, 142, 199, 1);
-        width: 1250px;
-        height: 20px;
+        height: 2vh;
+        width: 88vw;
         position: absolute;
-        margin: 39% 0 0 6%;
-        left: 0px;
+        margin-top: 76vh;
+        margin-right: 6vw;
+        margin-left: 6vw;
         grid-area: 1 / 1 / 2 / 2;
         justify-self: start;
         align-self: start;
         z-index: -2;
+        display: none;
       }
 
       .box6 {
         background-color: rgb(109, 142, 199);
-        width: 350px;
-        height: 418px;
+        width: 25vw;
+        height: 50vh;
         position: absolute;
-        margin: 10% 0 0 68.5%;
-        left: 0px;
+        margin: 26vh 6vw 0 69vw;
         grid-area: 1 / 1 / 2 / 2;
         justify-self: start;
         align-self: start;
         z-index: -2;
+        display: none;
       }
 
       .box7 {
         background-color: rgba(54, 34, 96, .6);
-        width: 330px;
-        height: 470px;
+        width: 24vw;
+        height: 63vh;
         position: absolute;
-        margin: 5% 0 0 62%;
-        left: 0px;
+        margin: 10vh 11vw 0 65vw;
         grid-area: 1 / 1 / 2 / 2;
         justify-self: start;
         align-self: start;
         z-index: -2;
+        display: none;
       }
 
       .box-shadow {
         position: absolute;
         height: 100%;
         width: 100%;
-        box-shadow: inset 0px -150px 200px rgb(15, 15, 15);
+        box-shadow: inset 0px -50px 100px rgb(15, 15, 15);
       }
 
       .container {
-        position:relative;
+        position: absolute;
         text-align: left;
-        margin-top: 10%;
-        margin-bottom: 6%;
-        margin-left: 7%;
+        margin-top: 18vh;
+        margin-bottom: 90px;
+        margin-left: 7vw;
         z-index: -1;
       }
 
       .title {
-        font-size: 3em;
+        font-size: 3.5vw;
         font-weight: bolder;
       }
 
-      .text-container {
-        font-size: 1.17em;
-        width: 740px;
-        margin-top: 1%;
-        margin-bottom: 1%;
+      .text-container {  
+        position: absolute;
+        font-size: 1.4vw;
+        width: 54vw;
+        margin-top: 40vh;
+      }
+
+      .text-container2 {  
+        position: absolute;
+        font-size: 1.4vw;
+        width: 53vw;
+        margin-top: 52vh;
       }
 
       .typewriter1 {
-        width: 2px;
-        height: 3em;
+        width: .4vw;
+        height: 5vh;
         background-color: white;
-        margin-left: 4px;
+        margin-left: 1vw;
         animation: blink .5s linear infinite alternate;
         display: none;
       }
 
       .typewriter2 {
-        width: 2px;
-        height: 1.17em;
+        width: .01vw;
+        height: 2.5vh;
         background-color: white;
-        margin-left: 4px;
+        margin-left: .1vw;
         animation: blink .5s linear infinite alternate;
         display: none;
       }
 
       .typewriter3 {
-        width: 2px;
-        height: 1.17em;
+        width: .01vw;
+        height: 2.5vh;
         background-color: white;
-        margin-left: 4px;
+        margin-left: .1vw;
         animation: blink .5s linear infinite alternate;
         display: none;
       }
@@ -180,8 +206,42 @@ body {
       .footer {
         font-size: 2.5em;
         text-align: center;
-        margin-top: 10%;
+        margin-top: 600px;
         z-index: -1;
+        display: block;
+        background-color: rgb(32, 33, 36);
+      }
+
+      .begin {
         display: none;
       }
 
+      .empty {
+        position: absolute;
+        min-height: 100%;
+        min-width: 100%;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        overflow: scroll;
+      }
+
+      .shadow {
+        position: absolute;
+        min-height: 100%;
+        /* width: 10vw; */
+        /* min-height: 100vh; */
+        min-width: 100%;
+        /* left: 0; */
+        /* right: 0; */
+        top: 0;
+        /* bottom: 0; */
+        margin-top: 11vh;
+        margin-left: 74vw;
+        overflow: scroll;
+        background-size: 18vw 62vh;
+        background-repeat: no-repeat;
+        background-image: url('https://www.transparentpng.com/thumb/shadow/iuqEeA-shadow-png-pic-controlled-drugs-cabinets-from-pharmacy.png');
+        display: none;
+      }
