@@ -36,6 +36,10 @@ $('.empty').click(function(){
   document.querySelector('.begin').style.display = 'block';
 });
 
+$('.footer').click(function () {
+  location.href = "home.html";
+});
+
 //TYPEWRITER EFFECT
 async function typeSentence(sentence, eleRef, typeRef, delay) {
     const letters = sentence.split("");;
