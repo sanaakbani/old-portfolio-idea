@@ -10,14 +10,6 @@ html, body {
           z-index: -2;
       }
 
-
-      #myCanvas {
-        position: absolute;
-        height: 100%;
-        width: 100%;
-        z-index: -1;
-      }
-
       .bg-color {
         position: absolute;
         min-height: 100%;
@@ -234,21 +226,16 @@ html, body {
         overflow: scroll;
       }
 
-      .shadow {
+      .pic {
+        width: 25vw;
+        height: 50vh;
         position: absolute;
-        min-height: 100%;
-        /* width: 10vw; */
-        /* min-height: 100vh; */
-        min-width: 100%;
-        /* left: 0; */
-        /* right: 0; */
-        top: 0;
-        /* bottom: 0; */
-        margin-top: 11vh;
-        margin-left: 74vw;
-        overflow: scroll;
-        background-size: 18vw 62vh;
-        background-repeat: no-repeat;
-        background-image: url('https://www.transparentpng.com/thumb/shadow/iuqEeA-shadow-png-pic-controlled-drugs-cabinets-from-pharmacy.png');
-        display: none;
+        margin: 26vh 6vw 0 69vw;
+        grid-area: 1 / 1 / 2 / 2;
+        justify-self: start;
+        align-self: start;
+      }
+
+      canvas {
+        z-index: -2;
       }

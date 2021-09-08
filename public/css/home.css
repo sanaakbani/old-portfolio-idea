@@ -1,0 +1,195 @@
+html, body {
+    font-family: 'Monaco', 'Lucida Console', 'Arial';
+    color: rgb(253, 253, 253);
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    min-height: 100%;
+    min-width: 100%;
+    overflow: scroll;
+}
+
+.bg-color {
+    position: absolute;
+    min-height: 100%;
+    min-width: 100%;
+    background-color: rgb(32, 33, 36);
+    overflow: visible;
+}
+
+.menu-bar {
+    position: absolute;
+    text-align: center;
+    font-size: 1.4vw;
+    height: 15vh;
+    min-width: 100%;
+    overflow: visible;
+}
+
+.home {
+    position: absolute;
+    margin-top: 8vh;
+    margin-left: 24vw;
+    height: 5vh;
+    width: 6vw;
+    overflow: visible;
+    display: none;
+}
+
+.about {
+    position: absolute;
+    margin-top: 8vh;
+    margin-left: 30vw;
+    height: 5vh;
+    width: 7vw;
+    overflow: visible;
+    display: none;
+}
+
+.work {
+    position: absolute;
+    margin-top: 8vh;
+    margin-left: 37vw;
+    height: 5vh;
+    width: 15vw;
+    overflow: visible;
+    display: none;
+}
+
+.volunteer {
+    position: absolute;
+    margin-top: 8vh;
+    margin-left: 52vw;
+    height: 5vh;
+    width: 14vw;
+    overflow: visible;
+    display: none;
+}
+
+.projects {
+    position: absolute;
+    margin-top: 8vh;
+    margin-left: 66vw;
+    height: 5vh;
+    width: 9vw;
+    overflow: visible;
+    display: none;
+}
+
+.resume {
+    position: absolute;
+    margin-top: 8vh;
+    margin-left: 75vw;
+    height: 5vh;
+    width: 8vw;
+    overflow: visible;
+    display: none;
+}
+
+.contact {
+    position: absolute;
+    margin-top: 8vh;
+    margin-left: 83vw;
+    height: 5vh;
+    width: 8vw;
+    overflow: visible;
+    display: none;
+}
+
+.slider-home {
+    position: absolute;
+    text-align: center;
+    font-size: 1.4vw;
+    margin-top: 7vh;
+    margin-left: 24vw;
+    height: 6vh;
+    width: 6vw;
+    overflow: visible;
+    
+}
+
+.slider-about {
+    position: absolute;
+    text-align: center;
+    font-size: 1.4vw;
+    margin-top: 7vh;
+    margin-left: 30vw;
+    height: 6vh;
+    width: 7vw;
+    overflow: visible;
+    background-color: rgba(67, 98, 122, 0.3);
+    display: none;
+}
+
+.slider-work {
+    position: absolute;
+    text-align: center;
+    font-size: 1.4vw;
+    margin-top: 7vh;
+    margin-left: 37vw;
+    height: 6vh;
+    width: 15vw;
+    overflow: visible;
+    background-color: rgba(75, 121, 108, 0.5);
+    display: none;
+}
+
+.slider-volunteer {
+    position: absolute;
+    text-align: center;
+    font-size: 1.4vw;
+    margin-top: 7vh;
+    margin-left: 52vw;
+    height: 6vh;
+    width: 14vw;
+    overflow: visible;
+    background-color: rgba(40, 42, 168, 0.3);
+    display: none;
+}
+
+.slider-projects {
+    position: absolute;
+    text-align: center;
+    font-size: 1.4vw;
+    margin-top: 7vh;
+    margin-left: 66vw;
+    height: 6vh;
+    width: 9vw;
+    overflow: visible;
+    background-color: rgba(179, 46, 91, 0.4); 
+    display: none;
+}
+
+.slider-resume {
+    position: absolute;
+    text-align: center;
+    font-size: 1.4vw;
+    margin-top: 7vh;
+    margin-left: 75vw;
+    height: 6vh;
+    width: 8vw;
+    overflow: visible;
+    background-color: rgba(164, 79, 170, 0.4);
+    display: none;
+}
+
+.slider-contact {
+    position: absolute;
+    text-align: center;
+    font-size: 1.4vw;
+    margin-top: 7vh;
+    margin-left: 83vw;
+    height: 6vh;
+    width: 8vw;
+    overflow: visible;
+    background-color: rgba(109, 171, 216, 0.4);
+    display: none;
+}
+
+.header-img {
+    position: absolute;
+    margin-top: 15vh;
+    height: 85vh;
+    min-width: 100%;
+    overflow: visible;
+}
