@@ -77,8 +77,8 @@ renderer.setClearColor( 0xffffff, 0 );
 document.body.append(renderer.domElement);
 
 var texLoader = new THREE.TextureLoader();
-var tex1 = texLoader.load( "http://domain.com/IMG_2409.JPG"); 
-var tex2 = texLoader.load( "http://domain.com/IMG_2412.jpg"); 
+var tex1 = texLoader.load( "/img1.jpg"); 
+var tex2 = texLoader.load( "/img2.jpg"); 
 // Create an array of materials to be used in a cube, one for each side
 var cubeMaterialArray = [];
 
