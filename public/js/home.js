@@ -6,11 +6,12 @@ $(document).ready(function() {
     fadeIn(document.querySelector('.projects', 1));
     fadeIn(document.querySelector('.resume', 1));
     fadeIn(document.querySelector('.contact', 1));
+    document.querySelector('.slider-home').style.backgroundColor = 'rgba(85, 37, 97, 0.5)';
 });
 
-$('.slider-home').mouseover(function(){
+$('.slider-about').mouseover(function(){
     console.log('hover');
-    $('.slider-home').css("background-color", "rgba(85, 37, 97, 0.5);")
+    document.querySelector('.slider-about').style.backgroundColor = 'rgba(85, 37, 97, 0.5)``';
 });
 
 function fadeIn(element, endOpacity) {

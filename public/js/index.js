@@ -87,8 +87,8 @@ cubeMaterialArray.push( new THREE.MeshBasicMaterial( { color: 0xffffff } ) );
 cubeMaterialArray.push( new THREE.MeshBasicMaterial( { color: 0xffffff } ) );
 cubeMaterialArray.push( new THREE.MeshBasicMaterial( { color: 0xffffff } ) );
 cubeMaterialArray.push( new THREE.MeshBasicMaterial( { color: 0xffffff } ) );
-cubeMaterialArray.push( new THREE.MeshBasicMaterial( { map: tex1 } ) );
-cubeMaterialArray.push( new THREE.MeshBasicMaterial( { map: tex2 } ) );
+cubeMaterialArray.push( new THREE.MeshBasicMaterial( {  map: tex1  /* color: 0xCC4871 */ } ) );
+cubeMaterialArray.push( new THREE.MeshBasicMaterial( {  map: tex2  /* color: 0x6EDFD0 */ } ) );
 
 // Cube parameters: width (x), height (y), depth (z), 
 //       (optional) segments along x, segments along y, segments along z
