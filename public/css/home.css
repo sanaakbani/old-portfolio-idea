@@ -105,7 +105,8 @@ html, body {
     height: 6vh;
     width: 6vw;
     overflow: visible;
-    
+    display: none;
+    background-color: rgba(85, 37, 97, 0.5);
 }
 
 .slider-about {
@@ -117,7 +118,8 @@ html, body {
     height: 6vh;
     width: 7vw;
     overflow: visible;
-    /* background-color: rgba(67, 98, 122, 0.3); */
+    display: none;
+    background-color: rgba(67, 98, 122, 0.3);
 }
 
 .slider-work {
@@ -129,7 +131,8 @@ html, body {
     height: 6vh;
     width: 15vw;
     overflow: visible;
-    /* background-color: rgba(75, 121, 108, 0.5); */
+    display: none;
+    background-color: rgba(75, 121, 108, 0.5);
 }
 
 .slider-volunteer {
@@ -141,7 +144,8 @@ html, body {
     height: 6vh;
     width: 14vw;
     overflow: visible;
-    /* background-color: rgba(40, 42, 168, 0.3); */
+    display: none;
+    background-color: rgba(40, 42, 168, 0.3);
 }
 
 .slider-projects {
@@ -153,7 +157,8 @@ html, body {
     height: 6vh;
     width: 9vw;
     overflow: visible;
-    /* background-color: rgba(179, 46, 91, 0.4); */
+    display: none;
+    background-color: rgba(179, 46, 91, 0.4);
 }
 
 .slider-resume {
@@ -165,7 +170,8 @@ html, body {
     height: 6vh;
     width: 8vw;
     overflow: visible;
-    /* background-color: rgba(164, 79, 170, 0.4); */
+    display: none;
+    background-color: rgba(164, 79, 170, 0.4); 
 }
 
 .slider-contact {
@@ -177,7 +183,8 @@ html, body {
     height: 6vh;
     width: 8vw;
     overflow: visible;
-    /* background-color: rgba(109, 171, 216, 0.4); */
+    display: none;
+    background-color: rgba(109, 171, 216, 0.4);
 }
 
 .header-img {
@@ -186,4 +193,5 @@ html, body {
     height: 85vh;
     min-width: 100%;
     overflow: visible;
+
 }
