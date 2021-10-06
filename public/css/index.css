@@ -7,7 +7,7 @@ html, body {
           min-height: 100%;
           min-width: 100%;
           overflow: scroll;
-          z-index: -2;
+          z-index: -2;  
       }
 
       .bg-color {

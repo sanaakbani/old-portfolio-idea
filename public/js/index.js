@@ -15,7 +15,7 @@ $(document).ready(function() {
         })
       })
     })
-  });
+});
 
 function fadeIn(element, endOpacity) {
     var op = 0.1;  // initial opacity
@@ -105,7 +105,7 @@ Object.assign(renderer.domElement.style, {
   height: '100vh',
 })
 
-// //Render loop
+// Render loop
 var render = function() {
   cube.rotation.y += .005;
 
